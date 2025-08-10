@@ -1,0 +1,61 @@
+**JavaScript Conditionals – Summary**
+
+JavaScript conditionals are statements that allow code to make decisions and execute different actions based on certain conditions (true/false). They help control the program’s flow.
+
+**Types of Conditionals:**
+
+1. **`if` statement** – Runs a block of code if a condition is `true`.
+
+   if (age >= 18) {
+       console.log("You can vote.");
+   }
+
+2. **`if...else` statement** – Provides an alternative block of code if the condition is `false`.
+
+   ```javascript
+   if (score >= 50) {
+       console.log("Pass");
+   } else {
+       console.log("Fail");
+   }
+   ```
+
+3. **`if...else if...else` statement** – Checks multiple conditions in sequence.
+
+   ```javascript
+   if (marks >= 90) {
+       console.log("A");
+   } else if (marks >= 75) {
+       console.log("B");
+   } else {
+       console.log("C");
+   }
+   ```
+
+4. **`switch` statement** – Compares a value against multiple cases for cleaner multi-choice logic.
+
+   ```javascript
+   switch (day) {
+       case "Monday":
+           console.log("Start of the week");
+           break;
+       case "Friday":
+           console.log("Weekend is near");
+           break;
+       default:
+           console.log("Midweek");
+   }
+   ```
+
+5. **Ternary operator (`condition ? value1 : value2`)** – Short form for simple `if...else`.
+
+   ```javascript
+   let result = (age >= 18) ? "Adult" : "Minor";
+   ```
+
+**Key Points:**
+
+* Conditions use comparison operators (`==`, `===`, `>`, `<`, `>=`, `<=`) and logical operators (`&&`, `||`, `!`).
+* `===` is strict equality (checks both value and type), while `==` does type conversion before comparison.
+* Always ensure proper `break` usage in `switch` to prevent *fall-through* unless intentional.
+

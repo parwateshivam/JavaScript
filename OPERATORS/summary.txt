@@ -1,0 +1,63 @@
+## **JavaScript Operators – Summary**
+
+Operators in JavaScript are special symbols or keywords used to perform operations on values (operands).
+
+---
+
+### **1. Arithmetic Operators** – Perform mathematical operations
+
+| Operator | Description         | Example (`x = 10`, `y = 5`) | Result |
+| -------- | ------------------- | --------------------------- | ------ |
+| `+`      | Addition            | `x + y`                     | `15`   |
+| `-`      | Subtraction         | `x - y`                     | `5`    |
+| `*`      | Multiplication      | `x * y`                     | `50`   |
+| `/`      | Division            | `x / y`                     | `2`    |
+| `%`      | Modulus (remainder) | `x % y`                     | `0`    |
+| `**`     | Exponentiation      | `x ** 2`                    | `100`  |
+
+---
+
+### **2. Assignment Operators** – Assign or update values
+
+| Operator | Example  | Equivalent To |
+| -------- | -------- | ------------- |
+| `=`      | `x = y`  | Assign value  |
+| `+=`     | `x += y` | `x = x + y`   |
+| `-=`     | `x -= y` | `x = x - y`   |
+| `*=`     | `x *= y` | `x = x * y`   |
+| `/=`     | `x /= y` | `x = x / y`   |
+| `%=`     | `x %= y` | `x = x % y`   |
+
+---
+
+### **3. Comparison Operators** – Compare values, return `true` or `false`
+
+| Operator | Description                 | Example (`x=5`, `y=5`) | Result  |
+| -------- | --------------------------- | ---------------------- | ------- |
+| `==`     | Equal (loose)               | `x == "5"`             | `true`  |
+| `===`    | Strict equal (value & type) | `x === "5"`            | `false` |
+| `!=`     | Not equal (loose)           | `x != "5"`             | `false` |
+| `!==`    | Strict not equal            | `x !== "5"`            | `true`  |
+| `>`      | Greater than                | `x > 3`                | `true`  |
+| `<`      | Less than                   | `x < 3`                | `false` |
+| `>=`     | Greater or equal            | `x >= 5`               | `true`  |
+| `<=`     | Less or equal               | `x <= 5`               | `true`  |
+
+---
+
+### **4. Logical Operators** – Combine or invert conditions
+
+| Operator | Description | Example         | Result  |        |   |         |        |
+| -------- | ----------- | --------------- | ------- | ------ | - | ------- | ------ |
+| `&&`     | AND         | `true && false` | `false` |        |   |         |        |
+| \`       |             | \`              | OR      | \`true |   | false\` | `true` |
+| `!`      | NOT         | `!true`         | `false` |        |   |         |        |
+
+---
+
+### **5. Other Useful Operators**
+
+* **Ternary:** `condition ? valueIfTrue : valueIfFalse`
+* **Typeof:** `typeof 42 // "number"`
+* **Spread:** `[...array]` (copies/expands elements)
+* **Nullish Coalescing (`??`):** Returns right value if left is `null` or `undefined`.
